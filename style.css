@@ -1,0 +1,107 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	/* background: #b3ffab; */
+	/* background: linear-gradient(to right, #b3ffab, #12fff7); */
+}
+
+header {
+	display: grid;
+	grid-template-columns: 1;
+	max-width: 960px;
+	background: white;
+	margin: 0 auto;
+	padding: 30px;
+	font-weight: 300;
+	font-size:35px;
+	text-align: center;
+	/* box-shadow: 2px 2px 5px #888888; */
+} 
+
+header > * {
+	padding: 30px;
+}
+
+#content{
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: repeat(3, minmax(500px, auto));
+	max-width: 960px;
+	grid-gap: 50px;
+	padding: 50px;
+	margin: 0 auto;
+	grid-template-areas: 
+	"one one one one one one two two two two two two"
+	"three three three three three three four four four four four four"
+	"five five five five five five six six six six six six";
+}
+
+#about {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	max-width: 960px;
+	grid-gap: 50px;
+	padding: 50px;
+	margin: 0 auto;
+}
+
+#about > * {
+	padding: 30px;
+	border-radius: 5px;
+	font-weight: 500;
+	background: linear-gradient(to right, #b3ffab, #12fff7);
+}
+
+.projects {
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 35px;
+}
+
+@media screen and (min-width: 1250px) {
+	#content{
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		grid-template-rows: repeat(3, minmax(500px, auto));
+		max-width: 960px;
+		grid-gap: 50px;
+		padding: 50px;
+		margin: 0 auto;
+		grid-template-areas: 
+		"one one one one one one two two two two two two"
+		"three three three three three three four four four four four four"
+		"five five five five five five six six six six six six";
+	}
+}
+#content > * {
+	/* background: white; */
+	padding: 30px;
+	border-radius: 5px;
+	background: linear-gradient(to right, #b3ffab, #12fff7);
+	/* box-shadow: 2px 2px 5px #888888; */
+}
+
+.one {
+	grid-area: one;
+}
+
+.two {
+	grid-area: two;
+}
+
+.three {
+	grid-area: three;
+}
+
+.four {
+	grid-area: four;
+}
+
+.five {
+	grid-area: five;
+}
+
+.six {
+	grid-area: six;
+}
